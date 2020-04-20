@@ -1,0 +1,68 @@
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\Data Analysis.exe.config
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\Data Analysis.exe
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\Data Analysis.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\itextsharp.dll
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\LiveCharts.dll
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\LiveCharts.Wpf.dll
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\MaterialDesignColors.dll
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\MaterialDesignThemes.Wpf.dll
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\itextsharp.xml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\LiveCharts.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\LiveCharts.xml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\LiveCharts.Wpf.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\LiveCharts.Wpf.xml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\MaterialDesignColors.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\MaterialDesignThemes.Wpf.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Release\MaterialDesignThemes.Wpf.xml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Data Analysis.csprojAssemblyReference.cache
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Controls\DiscreteControl.g.cs
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Controls\IntervalControl.g.cs
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Main.g.cs
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\App.g.cs
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Data Analysis_MarkupCompile.cache
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Data Analysis_MarkupCompile.lref
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\App.baml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Controls\DiscreteControl.baml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Controls\IntervalControl.baml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Main.baml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Data Analysis.g.resources
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Data_Analysis.Properties.Resources.resources
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Data Analysis.csproj.GenerateResource.cache
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Data Analysis.csproj.CopyComplete
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Data Analysis.exe
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Data Analysis.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Release\Data Analysis.csproj.CoreCompileInputs.cache
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\Data Analysis.exe.config
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\Data Analysis.exe
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\Data Analysis.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\itextsharp.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\LiveCharts.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\LiveCharts.Wpf.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\MaterialDesignColors.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\itextsharp.xml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\LiveCharts.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\LiveCharts.xml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\LiveCharts.Wpf.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\LiveCharts.Wpf.xml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\MaterialDesignColors.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\MaterialDesignThemes.Wpf.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Release\MaterialDesignThemes.Wpf.xml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Data Analysis.csprojAssemblyReference.cache
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Controls\DiscreteControl.g.cs
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Controls\IntervalControl.g.cs
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Main.g.cs
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\App.g.cs
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Data Analysis_MarkupCompile.cache
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Data Analysis_MarkupCompile.lref
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\App.baml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Controls\DiscreteControl.baml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Controls\IntervalControl.baml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Main.baml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Data Analysis.g.resources
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Data_Analysis.Properties.Resources.resources
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Data Analysis.csproj.GenerateResource.cache
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Data Analysis.csproj.CoreCompileInputs.cache
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Data Analysis.csproj.CopyComplete
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Data Analysis.exe
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Release\Data Analysis.pdb

@@ -1,0 +1,130 @@
+﻿<UserControl x:Class="Data_Analysis.Controls.IntervalControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Data_Analysis.Controls"
+             mc:Ignorable="d"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             Background="{DynamicResource MaterialDesignPaper}"
+             TextElement.FontWeight="Medium"
+             TextElement.FontSize="14"
+             FontFamily="{materialDesign:MaterialDesignFont}"
+             d:DesignHeight="640" d:DesignWidth="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="293*"/>
+            <ColumnDefinition Width="988*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="58"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="349*"></ColumnDefinition>
+                <ColumnDefinition Width="377" ></ColumnDefinition>
+                <ColumnDefinition Width="430"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <GroupBox Header="Исходные данные" Grid.Column="0" Margin="5,10,5,5">
+                <DataGrid IsReadOnly="True" CanUserDeleteRows="False" Visibility="Collapsed" CanUserAddRows="False" FontSize="10" AutoGenerateColumns="False" x:Name="discreteGrid" Grid.Column="0" Margin="3">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Path = leftBorder}" Header="Левая граница"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path = rightBorder}" Header="Правая граница"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path = frequency}" Header="Частота"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path = accumulatedFrequency}" Width="120" Header="Накопленная частота">
+                            <DataGridTextColumn.HeaderStyle>
+                                <Style TargetType="{x:Type DataGridColumnHeader}" BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                    <Setter Property="HorizontalAlignment" Value="Right" />
+                                    <Setter Property="ContentTemplate">
+                                        <Setter.Value>
+                                            <DataTemplate>
+                                                <TextBlock TextWrapping="Wrap" Text="{Binding}" TextAlignment="Right" />
+                                            </DataTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </DataGridTextColumn.HeaderStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+            <GroupBox Margin="5,10,5,5" Header="Расчеты" Grid.Column="1">
+                <StackPanel x:Name="calculated" Visibility="Collapsed">
+                    <TextBlock TextWrapping="Wrap" x:Name="tbAverageValue"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbMode"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbMedian"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbRangeOfVariation"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbMeanLinearDeviation"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbDispersion"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbStandardDeviation"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbCoefficientVariation"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbNormalCoefficientAsymmetry"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbEstimationCoefficientAsymmetry"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbDegreeAsymmetry"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbMaterialityAsymmetry"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbExcess"></TextBlock>
+                    <Separator/>
+                    <TextBlock TextWrapping="Wrap" x:Name="tbExcessError"></TextBlock>
+                    <Separator/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Grid.Column="2" Margin="5" Header="Гистограмма">
+                <lvc:CartesianChart Visibility="Visible" x:Name="barChart" Grid.Column="2" Series="{Binding BarChartCollection}" Margin="5">
+                    <lvc:CartesianChart.AxisY>
+                        <lvc:Axis Title="Y" LabelFormatter="{Binding YFormatter}"></lvc:Axis>
+                    </lvc:CartesianChart.AxisY>
+                    <lvc:CartesianChart.AxisX>
+                        <lvc:Axis Title="X" Labels="{Binding Labels}"></lvc:Axis>
+                    </lvc:CartesianChart.AxisX>
+                </lvc:CartesianChart>
+            </GroupBox>
+        </Grid>
+        <Button Click="btCalculate_Click"  x:Name="btCalculate" Grid.Row="1" Content="Выбрать файл..." Margin="264.5,16,573,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <materialDesign:DialogHost IsOpen="False" x:Name="dialogReInit" Identifier="reInit" Grid.ColumnSpan="2">
+            <materialDesign:DialogHost.DialogContent>
+                <Grid Margin="20">
+                    <StackPanel>
+                        <TextBlock Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Все несохраненные данные будут потеряны. Вы хотите продолжить?"/>
+                        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                            <Button Click="btYes_Click"  x:Name="btYes" Margin="5" Content="Да"></Button>
+                            <Button Click="btNo_Click"  x:Name="btNo" Margin="5" Content="Нет"></Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+        <StackPanel Visibility="Visible" Background="White" x:Name="bgStart2" Grid.ColumnSpan="2">
+            <TextBlock Margin="10" FontSize="70" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Начало работы"/>
+            <TextBlock Margin="10" Text="1. Для начала работы нажмите на кнопку 'Выбрать файл...' и выберите нужный Вам файл в формате csv." FontSize="20"></TextBlock>
+            <TextBlock Margin="10" Text="2. После этого вы сможете увидеть результат работы программы." FontSize="20"></TextBlock>
+            <TextBlock Margin="10" Text="3. Далее Вы сможете сохранить результаты в любом из предложенных форматов, а также взаимодействовать с системой R." FontSize="20"></TextBlock>
+        </StackPanel>
+        <materialDesign:DialogHost IsOpen="False" x:Name="dialogError" Identifier="errorDialog" Grid.ColumnSpan="2" Margin="-10,0,10,0">
+            <materialDesign:DialogHost.DialogContent>
+                <Grid Margin="20">
+                    <StackPanel>
+                        <TextBlock x:Name="tbError" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                            <Button Click="btOkay_Click"  x:Name="btOkay" Margin="5" Content="Ок"></Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+    </Grid>
+</UserControl>

@@ -1,0 +1,67 @@
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\Data Analysis.exe.config
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\Data Analysis.exe
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\Data Analysis.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Data Analysis.csprojAssemblyReference.cache
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Main.g.cs
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\App.g.cs
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Data Analysis_MarkupCompile.cache
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Data Analysis_MarkupCompile.lref
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Main.baml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Data Analysis.g.resources
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Data_Analysis.Properties.Resources.resources
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Data Analysis.csproj.GenerateResource.cache
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Data Analysis.exe
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Data Analysis.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\MaterialDesignColors.dll
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\MaterialDesignThemes.Wpf.dll
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\MaterialDesignColors.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\MaterialDesignThemes.Wpf.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\MaterialDesignThemes.Wpf.xml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\App.baml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Data Analysis.csproj.CopyComplete
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\LiveCharts.dll
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\LiveCharts.Wpf.dll
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\LiveCharts.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\LiveCharts.xml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\LiveCharts.Wpf.pdb
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\LiveCharts.Wpf.xml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Controls\DiscreteControl.g.cs
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Controls\IntervalControl.g.cs
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Controls\DiscreteControl.baml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\obj\Debug\Controls\IntervalControl.baml
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\itextsharp.dll
+L:\6 семестр\ИСИС\Проект\Data Analysis\Data Analysis\bin\Debug\itextsharp.xml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\Data Analysis.exe.config
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\Data Analysis.exe
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\Data Analysis.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\itextsharp.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\LiveCharts.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\MaterialDesignColors.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\itextsharp.xml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\LiveCharts.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\LiveCharts.xml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.csprojAssemblyReference.cache
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Controls\DiscreteControl.g.cs
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Controls\IntervalControl.g.cs
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Main.g.cs
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\App.g.cs
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis_MarkupCompile.cache
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis_MarkupCompile.lref
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\App.baml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Controls\DiscreteControl.baml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Controls\IntervalControl.baml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Main.baml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.g.resources
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data_Analysis.Properties.Resources.resources
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.csproj.GenerateResource.cache
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.csproj.CoreCompileInputs.cache
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.csproj.CopyComplete
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.exe
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.pdb
