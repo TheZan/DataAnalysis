@@ -8,7 +8,7 @@ Data Analysis - приложение для первичного статист�
 ![N|Solid](https://i.imgur.com/fOf8mkd.png)
 Программа выполняет анализ интервального ряда и дискретного.
 Демонстрация работы программы:
-![N|Solid](https://i.imgur.com/T74kujm.gif)
+![N|Solid](https://s4.gifyu.com/images/dataAnalysis.gif)
 ### Скриншоты
 ![N|Solid](https://i.imgur.com/YYfMFvv.png)
 ![N|Solid](https://i.imgur.com/BIsalap.png)
