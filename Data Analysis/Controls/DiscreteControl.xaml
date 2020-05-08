@@ -95,6 +95,7 @@
             </GroupBox>
         </Grid>
         <Button Click="btCalculate_Click" x:Name="btCalculate" Grid.Row="1" Content="Выбрать файл..." Margin="264.5,16,573,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button Click="BtR_OnClick" Visibility="Collapsed"  x:Name="btR" Grid.Row="1" Content="Открыть R" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10" Grid.Column="1"/>
         <materialDesign:DialogHost IsOpen="False" x:Name="dialogReInit" Identifier="reInit" Grid.ColumnSpan="2">
             <materialDesign:DialogHost.DialogContent>
                 <Grid Margin="20">

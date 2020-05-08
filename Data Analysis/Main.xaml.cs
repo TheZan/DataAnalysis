@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Xml.Linq;
+using RDotNet;
 
 namespace Data_Analysis
 {
@@ -93,7 +94,7 @@ namespace Data_Analysis
                 int columns = 3;
                 int rows = discreteControl.DiscreteGrids.Count();
                 double[] number = discreteControl.DiscreteGrids.Select(p => p.number).ToArray();
-                int[] frequency = discreteControl.DiscreteGrids.Select(p => p.frequency).ToArray();
+                double[] frequency = discreteControl.DiscreteGrids.Select(p => p.frequency).ToArray();
                 int[] accumulatedFrequency = discreteControl.DiscreteGrids.Select(p => p.accumulatedFrequency).ToArray();
                 Microsoft.Office.Interop.Word.Application application = new Microsoft.Office.Interop.Word.Application();
                 Object missing = Type.Missing;
@@ -168,7 +169,7 @@ namespace Data_Analysis
                 string filename = sfd.FileName;
                 int rows = discreteControl.DiscreteGrids.Count();
                 double[] number = discreteControl.DiscreteGrids.Select(p => p.number).ToArray();
-                int[] frequency = discreteControl.DiscreteGrids.Select(p => p.frequency).ToArray();
+                double[] frequency = discreteControl.DiscreteGrids.Select(p => p.frequency).ToArray();
                 int[] accumulatedFrequency = discreteControl.DiscreteGrids.Select(p => p.accumulatedFrequency).ToArray();
                 Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
                 Microsoft.Office.Interop.Excel.Workbook ExcelWorkBook;
@@ -245,7 +246,7 @@ namespace Data_Analysis
                 int rows = intervalControl.IntervalGrid.Count();
                 double[] lBorder = intervalControl.IntervalGrid.Select(p => p.leftBorder).ToArray();
                 double[] rBorder = intervalControl.IntervalGrid.Select(p => p.rightBorder).ToArray();
-                int[] frequency = intervalControl.IntervalGrid.Select(p => p.frequency).ToArray();
+                double[] frequency = intervalControl.IntervalGrid.Select(p => p.frequency).ToArray();
                 double[] accumulatedFrequency = intervalControl.IntervalGrid.Select(p => p.accumulatedFrequency).ToArray();
                 Microsoft.Office.Interop.Word.Application application = new Microsoft.Office.Interop.Word.Application();
                 Object missing = Type.Missing;
@@ -323,7 +324,7 @@ namespace Data_Analysis
                 int rows = intervalControl.IntervalGrid.Count();
                 double[] lBorder = intervalControl.IntervalGrid.Select(p => p.leftBorder).ToArray();
                 double[] rBorder = intervalControl.IntervalGrid.Select(p => p.rightBorder).ToArray();
-                int[] frequency = intervalControl.IntervalGrid.Select(p => p.frequency).ToArray();
+                double[] frequency = intervalControl.IntervalGrid.Select(p => p.frequency).ToArray();
                 double[] accumulatedFrequency = intervalControl.IntervalGrid.Select(p => p.accumulatedFrequency).ToArray();
                 Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
                 Microsoft.Office.Interop.Excel.Workbook ExcelWorkBook;
@@ -421,7 +422,7 @@ namespace Data_Analysis
                 table.AddCell(cell3);
 
                 double[] number = discreteControl.DiscreteGrids.Select(c => c.number).ToArray();
-                int[] frequency = discreteControl.DiscreteGrids.Select(c => c.frequency).ToArray();
+                double[] frequency = discreteControl.DiscreteGrids.Select(c => c.frequency).ToArray();
                 int[] accumulatedFrequency = discreteControl.DiscreteGrids.Select(c => c.accumulatedFrequency).ToArray();
 
                 for (int i = 0; i < row; i++)
@@ -532,7 +533,7 @@ namespace Data_Analysis
 
                 double[] lBorder = intervalControl.IntervalGrid.Select(c => c.leftBorder).ToArray();
                 double[] rBorder = intervalControl.IntervalGrid.Select(c => c.rightBorder).ToArray();
-                int[] frequency = intervalControl.IntervalGrid.Select(c => c.frequency).ToArray();
+                double[] frequency = intervalControl.IntervalGrid.Select(c => c.frequency).ToArray();
                 double[] accumulatedFrequency = intervalControl.IntervalGrid.Select(c => c.accumulatedFrequency).ToArray();
 
                 for (int i = 0; i < row; i++)
@@ -607,7 +608,7 @@ namespace Data_Analysis
 
                 int column = 3, row = discreteControl.DiscreteGrids.Count();
                 double[] number = discreteControl.DiscreteGrids.Select(c => c.number).ToArray();
-                int[] frequency = discreteControl.DiscreteGrids.Select(c => c.frequency).ToArray();
+                double[] frequency = discreteControl.DiscreteGrids.Select(c => c.frequency).ToArray();
                 int[] accumulatedFrequency = discreteControl.DiscreteGrids.Select(c => c.accumulatedFrequency).ToArray();
 
                 XDocument xdoc = new XDocument();
@@ -665,7 +666,7 @@ namespace Data_Analysis
                 int column = 4, row = intervalControl.IntervalGrid.Count();
                 double[] lBorder = intervalControl.IntervalGrid.Select(c => c.leftBorder).ToArray();
                 double[] rBorder = intervalControl.IntervalGrid.Select(c => c.rightBorder).ToArray();
-                int[] frequency = intervalControl.IntervalGrid.Select(c => c.frequency).ToArray();
+                double[] frequency = intervalControl.IntervalGrid.Select(c => c.frequency).ToArray();
                 double[] accumulatedFrequency = intervalControl.IntervalGrid.Select(c => c.accumulatedFrequency).ToArray();
 
                 XDocument xdoc = new XDocument();
@@ -727,14 +728,6 @@ namespace Data_Analysis
         private void teamAbout_Click(object sender, RoutedEventArgs e)
         {
             dialogTeam.IsOpen = true;
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            Process systemR = new Process();
-            systemR.StartInfo.FileName = (@"C:\Program Files\R\R-3.6.3\bin\x64\Rgui.exe");
-            systemR.StartInfo.Arguments = "";
-            systemR.Start();
         }
     }
 }

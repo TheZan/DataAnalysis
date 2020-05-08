@@ -124,7 +124,7 @@ namespace Data_Analysis
             {
                 AverageValue = 0;
                 double[] num = DiscreteGrids.Select(p => p.number).ToArray();
-                int[] freq = DiscreteGrids.Select(p => p.frequency).ToArray();
+                double[] freq = DiscreteGrids.Select(p => p.frequency).ToArray();
                 for (int i = 0; i < DiscreteGrids.Count - 1; i++)
                 {
                     AverageValue += Convert.ToDouble(num[i]) * Convert.ToDouble(freq[i]);
@@ -145,7 +145,7 @@ namespace Data_Analysis
             try
             {
                 double[] num = DiscreteGrids.Select(p => p.number).ToArray();
-                int[] freq = DiscreteGrids.Select(p => p.frequency).ToArray();
+                double[] freq = DiscreteGrids.Select(p => p.frequency).ToArray();
                 for (int i = 0; i < DiscreteGrids.Count - 1; i++)
                 {
                     if (frequency < Convert.ToDouble(freq[i]))

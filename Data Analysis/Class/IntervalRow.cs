@@ -149,7 +149,7 @@ namespace Data_Analysis
                 AverageValue = 0;
                 double[] lBorder = IntervalGrid.Select(p => p.leftBorder).ToArray();
                 double[] rBorder = IntervalGrid.Select(p => p.rightBorder).ToArray();
-                int[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
+                double[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
                 for (int i = 0; i < IntervalGrid.Count - 1; i++)
                 {
                     AverageValue += (Convert.ToDouble(lBorder[i]) + (((Convert.ToDouble(rBorder[i])) - (Convert.ToDouble(lBorder[i]))) / 2)) * Convert.ToDouble(freq[i]);
@@ -166,18 +166,18 @@ namespace Data_Analysis
         /*Метод для поиска моды*/
         public double CalculateMode()
         {
-            int frequency = 0;
+            double frequency = 0;
             double Mode = 0;
             try
             {
                 double[] lBorder = IntervalGrid.Select(p => p.leftBorder).ToArray();
                 double[] rBorder = IntervalGrid.Select(p => p.rightBorder).ToArray();
-                int[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
+                double[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
                 for (int i = 1; i < IntervalGrid.Count; i++)
                 {
                     if (frequency < freq[i])
                     {
-                        frequency = freq[i];
+                        frequency = Convert.ToDouble(freq[i]);
                         Mode = lBorder[i] + (H * (Convert.ToDouble((freq[i] - freq[i - 1])) / (Convert.ToDouble((freq[i] - freq[i - 1])) + (Convert.ToDouble(freq[i] - freq[i + 1])))));
                     }
                 }
@@ -195,7 +195,7 @@ namespace Data_Analysis
             double Median = 0;
             double[] lBorder = IntervalGrid.Select(p => p.leftBorder).ToArray();
             double[] rBorder = IntervalGrid.Select(p => p.rightBorder).ToArray();
-            int[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
+            double[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
             double[] accumFreq = IntervalGrid.Select(p => p.accumulatedFrequency).ToArray();
             try
             {
@@ -263,7 +263,7 @@ namespace Data_Analysis
             double MeanLinearDeviation = 0;
             double[] lBorder = IntervalGrid.Select(p => p.leftBorder).ToArray();
             double[] rBorder = IntervalGrid.Select(p => p.rightBorder).ToArray();
-            int[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
+            double[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
             try
             {
                 for (int i = 1; i < IntervalGrid.Count - 1; i++)
@@ -283,7 +283,7 @@ namespace Data_Analysis
         {
             double[] lBorder = IntervalGrid.Select(p => p.leftBorder).ToArray();
             double[] rBorder = IntervalGrid.Select(p => p.rightBorder).ToArray();
-            int[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
+            double[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
             try
             {
                 Dispersion = 0;
@@ -334,7 +334,7 @@ namespace Data_Analysis
         {
             double[] lBorder = IntervalGrid.Select(p => p.leftBorder).ToArray();
             double[] rBorder = IntervalGrid.Select(p => p.rightBorder).ToArray();
-            int[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
+            double[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
             try
             {
                 EstimationCoefficientAsymmetry = "";
@@ -394,7 +394,7 @@ namespace Data_Analysis
         {
             double[] lBorder = IntervalGrid.Select(p => p.leftBorder).ToArray();
             double[] rBorder = IntervalGrid.Select(p => p.rightBorder).ToArray();
-            int[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
+            double[] freq = IntervalGrid.Select(p => p.frequency).ToArray();
             try
             {
                 Excess = 0;

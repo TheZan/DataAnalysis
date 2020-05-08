@@ -65,3 +65,10 @@ C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.csproj.
 C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.csproj.CopyComplete
 C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.exe
 C:\Users\Zan\Desktop\Data Analysis\Data Analysis\obj\Debug\Data Analysis.pdb
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\DynamicInterop.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\RDotNet.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\DynamicInterop.xml
+C:\Users\Zan\Desktop\Data Analysis\Data Analysis\bin\Debug\RDotNet.xml

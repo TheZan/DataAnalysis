@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using RDotNet;
 
 namespace Data_Analysis.Controls
 {
@@ -43,6 +44,9 @@ namespace Data_Analysis.Controls
             tbExcessError.Text = "Средняя квадратическая ошибка эксцесса: " + discreteRow.CalculateExcessError();
         }
 
+        public double[] X { get; set; }
+        public double[] Y { get; set; }
+
         private void BuildChart()
         {
             polygon.DataContext = null;
@@ -53,13 +57,13 @@ namespace Data_Analysis.Controls
                     Values = new ChartValues<ObservablePoint>(),
                 }
             };
-            double[] x = DiscreteGrids.Select(p => p.number).ToArray();
-            int[] y = DiscreteGrids.Select(p => p.frequency).ToArray();
+            X = DiscreteGrids.Select(p => p.number).ToArray();
+            Y = DiscreteGrids.Select(p => p.frequency).ToArray();
             foreach (var series in SeriesCollection)
             {
-                for (var i = 0; i < x.Length; i++)
+                for (var i = 0; i < X.Length; i++)
                 {
-                    series.Values.Add(new ObservablePoint(x[i], y[i]));
+                    series.Values.Add(new ObservablePoint(X[i], Y[i]));
                 }
             }
 
@@ -87,6 +91,7 @@ namespace Data_Analysis.Controls
                         polygon.Visibility = Visibility.Visible;
                         calculated.Visibility = Visibility.Visible;
                         bgStart.Visibility = Visibility.Collapsed;
+                        btR.Visibility = Visibility.Visible;
                         discreteGrid.ItemsSource = DiscreteGrids;
                         Calculate();
                         BuildChart();
@@ -140,6 +145,26 @@ namespace Data_Analysis.Controls
         private void btOkay_Click(object sender, RoutedEventArgs e)
         {
             dialogError.IsOpen = false;
+        }
+
+        private void BtR_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (Open)
+            {
+                try
+                {
+                    REngine.SetEnvironmentVariables();
+                    REngine engine = REngine.GetInstance();
+                    engine.Initialize();
+                    engine.SetSymbol("x", engine.CreateNumericVector(X));
+                    engine.SetSymbol("y", engine.CreateNumericVector(Y));
+                    engine.Evaluate("plot(x, y, type = 'l', main = 'Дискретный вариационный ряд')");
+                }
+                catch
+                {
+                    MessageBox.Show("RGUI.exe не найден!", "Ошибка");
+                }
+            }
         }
     }
 }

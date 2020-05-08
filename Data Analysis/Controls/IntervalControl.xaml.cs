@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using RDotNet;
 
 namespace Data_Analysis.Controls
 {
@@ -23,17 +24,20 @@ namespace Data_Analysis.Controls
             InitializeComponent();
         }
 
+        private double[] x;
+        private double[] y;
+
         private void BuildChart()
         {
             barChart.DataContext = null;
-            int[] y = IntervalGrid.Select(p => p.frequency).ToArray();
-            double[] x = IntervalGrid.Select(p => p.leftBorder).ToArray();
+            y = IntervalGrid.Select(p => p.frequency).ToArray();
+            x = IntervalGrid.Select(p => p.leftBorder).ToArray();
             Labels = new string[x.Length];
             barChart.Series = new SeriesCollection
             {
                 new ColumnSeries
                 {
-                    Values = new ChartValues<int>(y)
+                    Values = new ChartValues<double>(y)
                 }
             };
 
@@ -115,6 +119,7 @@ namespace Data_Analysis.Controls
                         calculated.Visibility = Visibility.Visible;
                         bgStart2.Visibility = Visibility.Collapsed;
                         IntervalGrid = intervalRow.FillDataGridTwo();
+                        btR.Visibility = Visibility.Visible;
                         discreteGrid.ItemsSource = IntervalGrid;
                         Calculate();
                         BuildChart();
@@ -133,6 +138,26 @@ namespace Data_Analysis.Controls
         private void btOkay_Click(object sender, RoutedEventArgs e)
         {
             dialogError.IsOpen = false;
+        }
+
+        private void BtR_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (Open)
+            {
+                try
+                {
+                    REngine.SetEnvironmentVariables();
+                    REngine engine = REngine.GetInstance();
+                    engine.Initialize();
+                    engine.SetSymbol("x", engine.CreateNumericVector(x));
+                    engine.SetSymbol("y", engine.CreateNumericVector(y));
+                    engine.Evaluate("plot(x, y, type = 'h', main = 'Интервальный вариационный ряд')");
+                }
+                catch
+                {
+                    MessageBox.Show("RGUI.exe не найден!", "Ошибка");
+                }
+            }
         }
     }
 }

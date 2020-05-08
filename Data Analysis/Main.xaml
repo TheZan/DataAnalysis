@@ -42,7 +42,6 @@
                             <MenuItem Icon="{materialDesign:PackIcon Kind=Xml}" Header="XML" x:Name="SaveIntervalXML" Click="SaveIntervalXML_Click"></MenuItem>
                         </MenuItem>
                     </MenuItem>
-                    <MenuItem Header="Система R" Click="MenuItem_Click"></MenuItem>
                     <MenuItem Header="О программе">
                         <MenuItem Header="Команда проекта" x:Name="teamAbout" Click="teamAbout_Click"></MenuItem>
                     </MenuItem>
