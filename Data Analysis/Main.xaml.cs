@@ -24,6 +24,7 @@ namespace Data_Analysis
     {
         DiscreteControl discreteControl = new DiscreteControl();
         IntervalControl intervalControl = new IntervalControl();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -107,6 +108,7 @@ namespace Data_Analysis
                 document.Tables[1].Cell(1, 1).Range.Text = "Число";
                 document.Tables[1].Cell(1, 2).Range.Text = "Частота";
                 document.Tables[1].Cell(1, 3).Range.Text = "Накопленная частота";
+
                 for (int i = 0; i < rows; i++)
                 {
                     document.Tables[1].Cell(i + 2, 1).Range.Text = Convert.ToString(number[i]);

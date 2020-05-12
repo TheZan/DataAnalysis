@@ -320,7 +320,7 @@ namespace Data_Analysis
             try
             {
                 CoefficientVariation = 0;
-                CoefficientVariation = (StandardDeviation / AverageValue) / 100;
+                CoefficientVariation = StandardDeviation / AverageValue;
                 return Math.Round(CoefficientVariation, 2);
             }
             catch

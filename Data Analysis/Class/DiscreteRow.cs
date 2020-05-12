@@ -226,7 +226,7 @@ namespace Data_Analysis
                 {
                     MeanLinearDeviation = Math.Abs(Convert.ToDouble(RowList[i]) - AverageValue);
                 }
-                MeanLinearDeviation = MeanLinearDeviation / (RowList.Count);
+                MeanLinearDeviation = MeanLinearDeviation / RowList.Count;
                 return Math.Round(MeanLinearDeviation, 2);
             }
             catch
@@ -275,7 +275,7 @@ namespace Data_Analysis
             try
             {
                 CoefficientVariation = 0;
-                CoefficientVariation = (StandardDeviation / AverageValue) / 100;
+                CoefficientVariation = StandardDeviation / AverageValue;
                 return Math.Round(CoefficientVariation, 2);
             }
             catch
